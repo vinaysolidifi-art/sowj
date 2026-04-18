@@ -335,11 +335,40 @@ body {
 @keyframes pulse { 0%,100%{opacity:0.3} 50%{opacity:0.9} }
 
 @media(max-width:640px){
-  .mosaic-grid{ grid-template-columns: 1fr 1fr; }
-  .mem-card.wide{ grid-column: span 2; }
-  .mem-card.tall{ grid-row: span 1; }
-  .sec{padding:60px 20px;}
-  .bridge-sec{padding:80px 20px;}
+  /* login */
+  .l-name { font-size: clamp(2.4rem,10vw,3.5rem); }
+  .l-form { width: 90%; max-width: 320px; }
+  /* mosaic */
+  .mosaic-grid { grid-template-columns: 1fr 1fr; }
+  .mem-card.wide { grid-column: span 2; }
+  .mem-card.tall { grid-row: span 1; }
+  .mosaic-sec { padding: 60px 16px 80px; }
+
+  /* hero */
+  .hero { padding: 60px 20px; }
+  .hero-h { line-height: 1; }
+  .hero-hint { font-size: 0.95rem; }
+
+  /* sections */
+  .sec { padding: 60px 20px; }
+  .bridge-sec { padding: 70px 20px; }
+  .bridge-text { font-size: clamp(1.1rem, 4vw, 1.5rem); }
+
+  /* noticed */
+  .noticed-inner { padding: 0 20px; }
+  .noticed-title { font-size: clamp(1.4rem, 6vw, 2rem); }
+  .noticed-item { gap: 16px; }
+
+  /* numbers */
+  .numbers-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
+  .num-big { font-size: clamp(2.5rem, 10vw, 4rem); }
+
+  /* video */
+  .video-frame { margin: 0 16px; }
+
+  /* final */
+  .final-sec { padding: 80px 24px; }
+  .final-big { font-size: clamp(2rem, 8vw, 3.5rem); }
 }
 </style>
 </head>
@@ -362,7 +391,6 @@ body {
     <button class="l-btn" onclick="doLogin()">Open →</button>
   </div>
 </div>
-
 <!-- ══════════ SITE ══════════ -->
 <div id="site">
 
@@ -638,8 +666,7 @@ function doLogin() {
     err.classList.remove('show');
     document.getElementById('login-page').classList.add('out');
     setTimeout(() => {
-      const site = document.getElementById('site');
-      site.classList.add('on');
+      document.getElementById('site').classList.add('on');
       initReveal();
     }, 600);
   } else {
