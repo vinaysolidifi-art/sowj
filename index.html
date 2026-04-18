@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>For Sowjanya — April 18</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,600&family=EB+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,600&amp;family=EB+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&amp;family=Jost:wght@200;300;400;500&amp;display=swap" rel="stylesheet">
 <style>
 :root {
   --night: #07060a;
@@ -400,9 +398,9 @@ body {
       <!-- Card 1: wide — cafe walks -->
       <div class="mem-card wide rv">
         <div class="mem-img">
-          <span class="ph-icon">📷</span>
-          <span class="ph-txt">A cafe photo — any one</span>
-          <input type="file" accept="image/*" onchange="loadImg(this)">
+          
+          
+          <img src="media/photos/cafe.jpg" alt="cafe" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
         </div>
         <div class="mem-overlay">
           <span class="mem-label">The cafe walks</span>
@@ -413,9 +411,9 @@ body {
       <!-- Card 2: tall — saree -->
       <div class="mem-card tall rv d1">
         <div class="mem-img">
-          <span class="ph-icon">📷</span>
-          <span class="ph-txt">Saree photo</span>
-          <input type="file" accept="image/*" onchange="loadImg(this)">
+          
+          
+          <img src="media/photos/saree.jpeg" alt="saree" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
         </div>
         <div class="mem-overlay">
           <span class="mem-label">Any occasion</span>
@@ -426,9 +424,9 @@ body {
       <!-- Card 3 -->
       <div class="mem-card rv d1">
         <div class="mem-img">
-          <span class="ph-icon">📷</span>
-          <span class="ph-txt">Candid / random</span>
-          <input type="file" accept="image/*" onchange="loadImg(this)">
+          
+          
+          <img src="media/photos/candid.jpeg" alt="candid" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
         </div>
         <div class="mem-overlay">
           <span class="mem-label">Unposed</span>
@@ -439,9 +437,9 @@ body {
       <!-- Card 4 -->
       <div class="mem-card rv d2">
         <div class="mem-img">
-          <span class="ph-icon">📷</span>
-          <span class="ph-txt">Sleeping / yawning</span>
-          <input type="file" accept="image/*" onchange="loadImg(this)">
+          
+          
+          <img src="media/photos/sleeping.jpeg" alt="sleeping" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
         </div>
         <div class="mem-overlay">
           <span class="mem-label">In her element</span>
@@ -453,12 +451,12 @@ body {
       <div class="mem-card rv d2">
         <div class="mem-img">
           <span class="ph-icon">📷</span>
-          <span class="ph-txt">Cooking / home</span>
-          <input type="file" accept="image/*" onchange="loadImg(this)">
+          <span class="ph-txt">Food / eating out</span>
+          
         </div>
         <div class="mem-overlay">
-          <span class="mem-label">With standards</span>
-          <span class="mem-line">"She cooks like it matters. Because for her, it does."</span>
+          <span class="mem-label">The foodie</span>
+          <span class="mem-line">"She doesn't just eat. She experiences it. Every bite, every place, every time."</span>
         </div>
       </div>
 
@@ -467,7 +465,7 @@ body {
         <div class="mem-img">
           <span class="ph-icon">⭐</span>
           <span class="ph-txt">The birthday cake photo — the one with the face</span>
-          <input type="file" accept="image/*" onchange="loadImg(this)">
+          
         </div>
         <div class="mem-overlay" style="opacity:1; background: linear-gradient(to top, rgba(45,13,24,0.92) 0%, transparent 55%);">
           <span class="mem-label" style="color: var(--rose);">Last year · This exact night</span>
@@ -480,7 +478,7 @@ body {
         <div class="mem-img">
           <span class="ph-icon">📷</span>
           <span class="ph-txt">A photo she took</span>
-          <input type="file" accept="image/*" onchange="loadImg(this)">
+          
         </div>
         <div class="mem-overlay">
           <span class="mem-label">Photographer</span>
@@ -493,7 +491,7 @@ body {
         <div class="mem-img">
           <span class="ph-icon">📷</span>
           <span class="ph-txt">Smiling — the real one</span>
-          <input type="file" accept="image/*" onchange="loadImg(this)">
+          
         </div>
         <div class="mem-overlay">
           <span class="mem-label">The one</span>
@@ -506,7 +504,7 @@ body {
         <div class="mem-img">
           <span class="ph-icon">📷</span>
           <span class="ph-txt">Your favourite of her</span>
-          <input type="file" accept="image/*" onchange="loadImg(this)">
+          
         </div>
         <div class="mem-overlay">
           <span class="mem-label">Favourite</span>
@@ -602,9 +600,9 @@ body {
       <div class="vf-corner bl"></div>
       <div class="vf-corner br"></div>
       <div class="video-slot" id="vslot">
-        <input type="file" accept="video/*" onchange="loadVid(this)">
-        <span class="vs-icon">🎬</span>
-        <span class="vs-txt">Upload your birthday video here</span>
+        <video src="media/videos/video.mp4" controls="" style="position:absolute;inset:0;width:100%;height:100%;background:#000;"></video>
+        
+        
       </div>
     </div>
   </section>
@@ -697,30 +695,8 @@ function initReveal() {
   els.forEach(el => ob.observe(el));
 }
 
-// ── IMAGE + VIDEO LOADERS ─────────────────────
-function loadImg(input) {
-  const file = input.files[0]; if(!file) return;
-  const url = URL.createObjectURL(file);
-  const slot = input.closest('.mem-img');
-  let img = slot.querySelector('img');
-  if(!img){ img=document.createElement('img'); slot.appendChild(img); }
-  img.src = url;
-  slot.querySelector('.ph-icon').style.display='none';
-  slot.querySelector('.ph-txt').style.display='none';
-}
-
-function loadVid(input) {
-  const file = input.files[0]; if(!file) return;
-  const url = URL.createObjectURL(file);
-  const slot = document.getElementById('vslot');
-  const vid = document.createElement('video');
-  vid.src = url; vid.controls = true;
-  vid.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;background:#000;';
-  slot.querySelector('input').style.display='none';
-  slot.querySelector('.vs-icon').style.display='none';
-  slot.querySelector('.vs-txt').style.display='none';
-  slot.appendChild(vid);
-}
 </script>
-</body>
-</html>
+
+
+
+</body></html>
